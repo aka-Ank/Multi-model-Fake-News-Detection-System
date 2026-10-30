@@ -1,0 +1,19 @@
+{
+  "batch_size": 128,
+  "config_copy_path": "reports/experiments/image_handcrafted_pilot/config.json",
+  "early_stopping_patience": 4,
+  "epochs": 30,
+  "gradient_clip": 5.0,
+  "histogram_bins": 16,
+  "image_manifest": "data/processed/fakeddit/image_manifest.parquet",
+  "image_size": [
+    64,
+    64
+  ],
+  "l2": 0.001,
+  "learning_rate": 0.05,
+  "output_dir": "reports/experiments/image_handcrafted_pilot",
+  "sample_size": 5000,
+  "seed": 42,
+  "threshold": 0.5
+}

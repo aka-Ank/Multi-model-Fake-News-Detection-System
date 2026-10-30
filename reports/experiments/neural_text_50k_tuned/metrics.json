@@ -1,0 +1,88 @@
+{
+  "best_epoch": 2,
+  "config": {
+    "batch_size": 256,
+    "config_copy_path": "reports/experiments/neural_text_50k_tuned/config.json",
+    "dropout": 0.15,
+    "early_stopping_patience": 1,
+    "embedding_dim": 96,
+    "epochs": 8,
+    "hidden_dim": 96,
+    "learning_rate": 0.001,
+    "max_length": 32,
+    "max_vocabulary_size": 20000,
+    "min_frequency": 2,
+    "output_dir": "reports/experiments/neural_text_50k_tuned",
+    "restore_best": true,
+    "sample_size": 50000,
+    "seed": 42,
+    "threshold": 0.5,
+    "tiny_epochs": 200,
+    "tiny_learning_rate": 0.01,
+    "tokenization_mode": "minimal",
+    "train_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_train.tsv",
+    "validation_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_validate.tsv"
+  },
+  "embedding_dim": 96,
+  "max_length": 32,
+  "model_size_bytes": 12699428,
+  "parameter_count": 1587265,
+  "parameter_summary": [
+    {
+      "layer": "Embedding",
+      "parameters": 1577856
+    },
+    {
+      "layer": "Dense",
+      "parameters": 9312
+    },
+    {
+      "layer": "Dense",
+      "parameters": 97
+    },
+    {
+      "layer": "total",
+      "parameters": 1587265
+    }
+  ],
+  "runtime_seconds": 10.729630708000059,
+  "sequence_length_stats": {
+    "mean": 7.45094,
+    "p50": 6.0,
+    "p90": 14.0,
+    "p95": 17.0,
+    "p99": 27.0
+  },
+  "tiny_overfit_final": {
+    "epoch": 1.0,
+    "train_accuracy": 1.0,
+    "train_loss": 0.661633834883874,
+    "train_macro_f1": 1.0
+  },
+  "token_diagnostics": {
+    "train_mean_valid_tokens": 7.4134,
+    "train_pad_rate": 0.76833125,
+    "train_unk_rate": 0.04714705803005369,
+    "validation_mean_valid_tokens": 7.376815746014627,
+    "validation_pad_rate": 0.7694745079370429,
+    "validation_unk_rate": 0.07202202145035465
+  },
+  "validation_metrics": {
+    "accuracy": 0.7786222237201308,
+    "brier_score": 0.15203848173893902,
+    "f1": 0.7271934378569204,
+    "fn": 5811.0,
+    "fp": 7326.0,
+    "macro_f1": 0.7704648157397009,
+    "macro_precision": 0.7683062360009715,
+    "macro_recall": 0.7737195182227594,
+    "precision": 0.7050130863700422,
+    "recall": 0.7508147512864494,
+    "roc_auc": 0.8538934932844983,
+    "specificity": 0.7966242851590695,
+    "tn": 28696.0,
+    "tp": 17509.0,
+    "weighted_f1": 0.7797269410787033
+  },
+  "vocabulary_size": 16436
+}

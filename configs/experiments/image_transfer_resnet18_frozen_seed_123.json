@@ -1,0 +1,14 @@
+{
+  "audit_manifest": "data/processed/fakeddit/multimodal_validation_manifest.parquet",
+  "batch_size": 32,
+  "development_fraction": 0.2,
+  "early_stopping_patience": 2,
+  "epochs": 8,
+  "image_size": 224,
+  "learning_rate": 0.001,
+  "output_dir": "reports/image_research/resnet18_frozen_seed_123",
+  "pretrained": true,
+  "seed": 123,
+  "train_manifest": "data/processed/fakeddit/multimodal_training_manifest_clean.parquet",
+  "weight_decay": 0.0001
+}

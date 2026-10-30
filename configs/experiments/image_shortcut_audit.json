@@ -1,0 +1,28 @@
+{
+  "baseline_model_dir": "reports/experiments/image_handcrafted_pilot/model",
+  "baseline_scaler_dir": "reports/experiments/image_handcrafted_pilot/scaler",
+  "config_copy_path": "reports/experiments/image_shortcut_audit/config.json",
+  "full_train_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_train.tsv",
+  "full_validation_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_validate.tsv",
+  "image_manifest": "data/processed/fakeddit/image_manifest.parquet",
+  "model": {
+    "batch_size": 128,
+    "early_stopping_patience": 4,
+    "epochs": 30,
+    "gradient_clip": 5.0,
+    "l2": 0.001,
+    "learning_rate": 0.05,
+    "threshold": 0.5
+  },
+  "output_dir": "reports/experiments/image_shortcut_audit",
+  "permutation_seeds": [
+    101,
+    202,
+    303
+  ],
+  "seed": 42,
+  "train_features": "reports/experiments/image_handcrafted_pilot/train_features.parquet",
+  "train_images": "reports/experiments/image_handcrafted_pilot/train_images.parquet",
+  "validation_features": "reports/experiments/image_handcrafted_pilot/validation_features.parquet",
+  "validation_images": "reports/experiments/image_handcrafted_pilot/validation_images.parquet"
+}

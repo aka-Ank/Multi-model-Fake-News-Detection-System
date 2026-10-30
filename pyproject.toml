@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fnews"
+version = "0.1.0"
+description = "Research-first multimodal fake news detection experiments on Fakeddit."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "FNEWS" }]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "gdown>=6.4",
+  "imagehash>=4.3",
+  "jupyterlab>=4.2",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pillow>=10.3",
+  "pillow>=10.3",
+  "pyarrow>=15.0",
+  "pyyaml>=6.0",
+  "requests>=2.32",
+  "seaborn>=0.13",
+  "tabulate>=0.9",
+  "tqdm>=4.66",
+  "transformers>=4.47,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+  "ruff>=0.6",
+]
+image-research = [
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+]
+
+[project.scripts]
+fnews-prepare-fakeddit = "fnews.data.prepare_fakeddit:main"
+fnews-eda-fakeddit = "fnews.data.eda_fakeddit:main"
+fnews-check-fakeddit-leakage = "fnews.data.check_fakeddit_leakage:main"
+fnews-download-fakeddit-images = "fnews.data.download_fakeddit_images:main"
+fnews-acquire-fakeddit-training-images = "fnews.data.resumable_image_acquisition:main"
+fnews-deep-eda-fakeddit = "fnews.data.deep_eda_fakeddit:main"
+fnews-image-eda-fakeddit = "fnews.data.image_eda_fakeddit:main"
+fnews-audit-visualnews = "fnews.data.visualnews_audit:main"
+fnews-acquire-newsclippings = "fnews.data.newsclippings_pipeline:main"
+fnews-plan-visualnews-origin = "fnews.data.visualnews_acquisition:main"
+fnews-build-research-dataset = "fnews.data.research_dataset:main"
+fnews-text-logreg-baseline = "fnews.experiments.text_logreg_baseline:main"
+fnews-text-linear-baselines = "fnews.experiments.text_linear_baselines:main"
+fnews-image-handcrafted-baseline = "fnews.experiments.image_handcrafted_baseline:main"
+fnews-image-mlp-pilot = "fnews.experiments.image_mlp_pilot:main"
+fnews-image-shortcut-audit = "fnews.experiments.image_shortcut_audit:main"
+fnews-image-cnn-pilot = "fnews.experiments.image_cnn_pilot:main"
+fnews-cnn-training-diagnosis = "fnews.experiments.cnn_training_diagnosis:main"
+fnews-neural-text = "fnews.experiments.neural_text:main"
+fnews-multimodal-fusion = "fnews.experiments.multimodal_fusion:main"
+fnews-milestone8 = "fnews.experiments.milestone8:main"
+fnews-image-research-audit = "fnews.experiments.image_research_audit:main"
+fnews-image-transfer-baseline = "fnews.experiments.image_transfer_baseline:main"
+fnews-research-dataset-baselines = "fnews.experiments.research_dataset_baselines:main"
+fnews-train-clip-fusion = "fnews.experiments.clip_fusion_research_dataset:main"
+fnews-acquire-recovery-pilot = "fnews.data.recovery_pilot:main"
+fnews-modality-ablation = "fnews.experiments.modality_ablation:main"
+fnews-calibrate-fusion = "fnews.experiments.calibrate_fusion:main"
+fnews-raw-image-robustness = "fnews.experiments.raw_image_robustness:main"
+fnews-web = "fnews.web.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fnews"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["Fakeddit"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

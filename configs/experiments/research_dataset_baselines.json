@@ -1,0 +1,13 @@
+{
+  "dataset_root": "data/research_dataset",
+  "output_dir": "reports/experiments/research_dataset_baselines",
+  "seed": 42,
+  "batch_size": 32,
+  "text_batch_size": 32,
+  "clip_batch_size": 8,
+  "max_length": 64,
+  "epochs": 4,
+  "patience": 2,
+  "text_model": "prajjwal1/bert-tiny",
+  "clip_model": "openai/clip-vit-base-patch32"
+}

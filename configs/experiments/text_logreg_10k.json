@@ -1,0 +1,19 @@
+{
+  "batch_size": 256,
+  "config_copy_path": "reports/experiments/text_logreg_10k/config.json",
+  "early_stopping_patience": 3,
+  "epochs": 8,
+  "gradient_clip": 5.0,
+  "l2": 0.0001,
+  "l2_normalize": true,
+  "learning_rate": 0.5,
+  "max_vocabulary_size": 12000,
+  "min_frequency": 2,
+  "output_dir": "reports/experiments/text_logreg_10k",
+  "sample_size": 10000,
+  "seed": 42,
+  "threshold": 0.5,
+  "tokenization_mode": "minimal",
+  "train_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_train.tsv",
+  "validation_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_validate.tsv"
+}

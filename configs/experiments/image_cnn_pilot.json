@@ -1,0 +1,22 @@
+{
+  "batch_size": 16,
+  "config_copy_path": "reports/experiments/image_cnn_pilot/config.json",
+  "dropout": 0.1,
+  "epochs": 8,
+  "gradient_check_tolerance": 1e-6,
+  "image_size": [
+    64,
+    64
+  ],
+  "learning_rate": 0.001,
+  "output_dir": "reports/experiments/image_cnn_pilot",
+  "seed": 42,
+  "threshold": 0.5,
+  "tiny_epochs": 25,
+  "tiny_learning_rate": 0.003,
+  "tiny_overfit_size": 24,
+  "train_images": "reports/experiments/image_handcrafted_pilot/train_images.parquet",
+  "train_sample_size": 640,
+  "validation_images": "reports/experiments/image_handcrafted_pilot/validation_images.parquet",
+  "validation_sample_size": 320
+}

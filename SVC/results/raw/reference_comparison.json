@@ -1,0 +1,209 @@
+{
+  "dataset": "gaussian-overlap-reference",
+  "seed": 20261027,
+  "train_size": 50,
+  "test_size": 25,
+  "records": [
+    {
+      "name": "custom_primal_linear",
+      "training_seconds": 0.007886125007644296,
+      "prediction_seconds": 2.5666988221928477e-05,
+      "metrics": {
+        "labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            14,
+            0
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "accuracy": 1.0,
+        "per_class": {
+          "0": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 14
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11
+          }
+        },
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "balanced_accuracy": 1.0
+      },
+      "agreement_with_custom_primal": 1.0
+    },
+    {
+      "name": "custom_dual_linear",
+      "training_seconds": 0.0714955420116894,
+      "prediction_seconds": 0.0007906660030130297,
+      "metrics": {
+        "labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            14,
+            0
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "accuracy": 1.0,
+        "per_class": {
+          "0": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 14
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11
+          }
+        },
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "balanced_accuracy": 1.0
+      },
+      "agreement_with_custom_primal": 1.0
+    },
+    {
+      "name": "custom_rbf",
+      "training_seconds": 0.051343166996957734,
+      "prediction_seconds": 0.0004385000211186707,
+      "metrics": {
+        "labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            14,
+            0
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        "accuracy": 0.96,
+        "per_class": {
+          "0": {
+            "precision": 0.9333333333333333,
+            "recall": 1.0,
+            "f1": 0.9655172413793104,
+            "support": 14
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 0.9090909090909091,
+            "f1": 0.9523809523809523,
+            "support": 11
+          }
+        },
+        "macro_f1": 0.9589490968801313,
+        "weighted_f1": 0.959737274220033,
+        "balanced_accuracy": 0.9545454545454546
+      },
+      "agreement_with_custom_primal": 0.96
+    },
+    {
+      "name": "sklearn_linear_svc",
+      "training_seconds": 0.015402624994749203,
+      "prediction_seconds": 0.00010608398588374257,
+      "metrics": {
+        "labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            14,
+            0
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "accuracy": 1.0,
+        "per_class": {
+          "0": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 14
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11
+          }
+        },
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "balanced_accuracy": 1.0
+      },
+      "agreement_with_custom_primal": 1.0
+    },
+    {
+      "name": "sklearn_rbf_svc",
+      "training_seconds": 0.0005869169835932553,
+      "prediction_seconds": 0.00015495801926590502,
+      "metrics": {
+        "labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            14,
+            0
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        "accuracy": 0.96,
+        "per_class": {
+          "0": {
+            "precision": 0.9333333333333333,
+            "recall": 1.0,
+            "f1": 0.9655172413793104,
+            "support": 14
+          },
+          "1": {
+            "precision": 1.0,
+            "recall": 0.9090909090909091,
+            "f1": 0.9523809523809523,
+            "support": 11
+          }
+        },
+        "macro_f1": 0.9589490968801313,
+        "weighted_f1": 0.959737274220033,
+        "balanced_accuracy": 0.9545454545454546
+      },
+      "agreement_with_custom_primal": 0.96
+    }
+  ],
+  "note": "Agreement does not require matching parameters or scores: loss scaling, intercept treatment and stopping criteria differ."
+}

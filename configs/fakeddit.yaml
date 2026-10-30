@@ -1,0 +1,26 @@
+dataset:
+  name: fakeddit
+  raw_dir: data/raw/fakeddit
+  image_dir: data/raw/fakeddit/images
+  interim_dir: data/interim/fakeddit
+  reports_dir: reports/fakeddit
+  text_column: clean_title
+  id_column: id
+  image_url_column: image_url
+  has_image_column: hasImage
+  label_columns:
+    - 2_way_label
+    - 3_way_label
+    - 6_way_label
+  split_name_patterns:
+    train:
+      - train
+    validate:
+      - validate
+      - val
+      - dev
+    test:
+      - test
+  multimodal_keywords:
+    - multimodal_only_samples
+    - multimodal_

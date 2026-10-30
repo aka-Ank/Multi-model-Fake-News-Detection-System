@@ -1,0 +1,37 @@
+{
+  "dropout": 0.15,
+  "embedding_dim": 96,
+  "hidden_dim": 96,
+  "learning_rate": 0.001,
+  "metadata": {
+    "class_mapping": {
+      "0": "true",
+      "1": "fake"
+    },
+    "max_length": 32,
+    "pad_token": "<PAD>",
+    "tokenization_mode": "minimal",
+    "unk_token": "<UNK>"
+  },
+  "pad_index": 0,
+  "parameter_summary": [
+    {
+      "layer": "Embedding",
+      "parameters": 1577856
+    },
+    {
+      "layer": "Dense",
+      "parameters": 9312
+    },
+    {
+      "layer": "Dense",
+      "parameters": 97
+    },
+    {
+      "layer": "total",
+      "parameters": 1587265
+    }
+  ],
+  "seed": 42,
+  "vocab_size": 16436
+}

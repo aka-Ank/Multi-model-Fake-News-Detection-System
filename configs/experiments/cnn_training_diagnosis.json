@@ -1,0 +1,30 @@
+{
+  "config_copy_path": "reports/experiments/cnn_debug/config.json",
+  "image_size": [
+    64,
+    64
+  ],
+  "max_epochs": 120,
+  "optimizer_search": {
+    "adam": [
+      0.01,
+      0.003,
+      0.001
+    ],
+    "momentum": [
+      0.03,
+      0.01
+    ],
+    "sgd": [
+      0.1,
+      0.03,
+      0.01
+    ]
+  },
+  "output_dir": "reports/experiments/cnn_debug",
+  "seed": 42,
+  "selected_learning_rate": 0.0005,
+  "selected_optimizer": "adam",
+  "target_accuracy": 0.95,
+  "train_images": "reports/experiments/image_handcrafted_pilot/train_images.parquet"
+}

@@ -1,0 +1,14 @@
+{
+  "dataset_root": "data/research_dataset",
+  "output_dir": "reports/multimodal_fusion/clip_fusion_v1",
+  "config_copy_path": "reports/multimodal_fusion/clip_fusion_v1/config.json",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "seed": 42,
+  "hidden_dim": 256,
+  "dropout": 0.2,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 20,
+  "patience": 4
+}

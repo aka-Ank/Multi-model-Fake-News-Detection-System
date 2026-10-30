@@ -1,0 +1,46 @@
+{
+  "protocol": "5-fold out-of-fold train-margin Platt calibration; validation used once for alpha selection",
+  "split": "validation-933",
+  "paired_ids": 933,
+  "alpha": 0.41000000000000003,
+  "text_calibration_oof_train": {
+    "brier": 0.1855386750380189,
+    "log_loss": 0.5540449161095947,
+    "ece_10": 0.033585236323478374
+  },
+  "validation": {
+    "image": {
+      "accuracy": 0.6934619506966774,
+      "macro_f1": 0.6860877135193637,
+      "brier": 0.20379339158535004,
+      "log_loss": 0.5962604284286499,
+      "ece_10": 0.061401983557342846
+    },
+    "text": {
+      "accuracy": 0.7213290460878885,
+      "macro_f1": 0.7184095911146606,
+      "brier": 0.19244798508632113,
+      "log_loss": 0.5718753720689153,
+      "ece_10": 0.09444493587798157
+    },
+    "alpha_0_5": {
+      "accuracy": 0.7566988210075026,
+      "macro_f1": 0.7527438081173058,
+      "brier": 0.17676886727401642,
+      "log_loss": 0.5347927529404991,
+      "ece_10": 0.11037200638237878
+    },
+    "selected": {
+      "accuracy": 0.7642015005359056,
+      "macro_f1": 0.7594594341214633,
+      "brier": 0.1784817506072131,
+      "log_loss": 0.5384314180800445,
+      "ece_10": 0.10577716376881255
+    }
+  },
+  "gated_fusion_matched_validation": {
+    "accuracy": 0.8745980707395499,
+    "macro_f1": 0.8706998560844305
+  },
+  "limitations": "No held-out test data accessed. Image softmax probabilities were assessed on validation but not calibrated or tuned."
+}

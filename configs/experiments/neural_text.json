@@ -1,0 +1,21 @@
+{
+  "batch_size": 128,
+  "config_copy_path": "reports/experiments/neural_text/config.json",
+  "dropout": 0.1,
+  "embedding_dim": 64,
+  "epochs": 5,
+  "hidden_dim": 64,
+  "learning_rate": 0.001,
+  "max_length": 24,
+  "max_vocabulary_size": 12000,
+  "min_frequency": 2,
+  "output_dir": "reports/experiments/neural_text",
+  "sample_size": 10000,
+  "seed": 42,
+  "threshold": 0.5,
+  "tiny_epochs": 200,
+  "tiny_learning_rate": 0.01,
+  "tokenization_mode": "minimal",
+  "train_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_train.tsv",
+  "validation_tsv": "data/raw/fakeddit/multimodal_only_samples/multimodal_validate.tsv"
+}

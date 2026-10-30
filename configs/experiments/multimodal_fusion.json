@@ -1,0 +1,37 @@
+{
+  "config_copy_path": "reports/experiments/multimodal_fusion/config.json",
+  "features_dir": "data/processed/fakeddit/features",
+  "fusion": {
+    "batch_size": 128,
+    "dropout": 0.2,
+    "epochs": 20,
+    "hidden_dim": 64,
+    "learning_rate": 0.001
+  },
+  "image": {
+    "batch_size": 32,
+    "epochs": 3,
+    "image_size": [
+      64,
+      64
+    ],
+    "learning_rate": 0.0005
+  },
+  "image_manifest": "data/processed/fakeddit/image_manifest.parquet",
+  "output_dir": "reports/experiments/multimodal_fusion",
+  "seed": 42,
+  "text": {
+    "batch_size": 128,
+    "dropout": 0.1,
+    "embedding_dim": 64,
+    "epochs": 8,
+    "hidden_dim": 64,
+    "learning_rate": 0.001,
+    "max_length": 24,
+    "max_vocabulary_size": 8000,
+    "min_frequency": 2,
+    "tokenization_mode": "minimal"
+  },
+  "train_manifest_output": "data/processed/fakeddit/multimodal_training_manifest.parquet",
+  "validation_manifest_output": "data/processed/fakeddit/multimodal_validation_manifest.parquet"
+}

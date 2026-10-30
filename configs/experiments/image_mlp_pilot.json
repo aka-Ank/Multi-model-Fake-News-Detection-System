@@ -1,0 +1,16 @@
+{
+  "batch_size": 64,
+  "config_copy_path": "reports/experiments/image_mlp_pilot/config.json",
+  "dropout": 0.1,
+  "epochs": 30,
+  "hidden_dims": [
+    32
+  ],
+  "learning_rate": 0.001,
+  "optimizer": "adam",
+  "output_dir": "reports/experiments/image_mlp_pilot",
+  "seed": 42,
+  "threshold": 0.5,
+  "train_features": "reports/experiments/image_handcrafted_pilot/train_features.parquet",
+  "validation_features": "reports/experiments/image_handcrafted_pilot/validation_features.parquet"
+}

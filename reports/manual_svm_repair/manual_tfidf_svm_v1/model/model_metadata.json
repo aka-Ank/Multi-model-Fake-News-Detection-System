@@ -1,0 +1,18 @@
+{
+  "c": 1.0,
+  "class_weights": {
+    "0": 1.0,
+    "1": 1.0
+  },
+  "l2": 0.0001,
+  "learning_rate": 0.35,
+  "metadata": {
+    "label_mapping": {
+      "0": "SOURCE_NON_TRUE",
+      "1": "SOURCE_TRUE"
+    },
+    "validation_acceptance": "pending"
+  },
+  "n_features": 12000,
+  "seed": 42
+}

@@ -1,0 +1,44 @@
+{
+  "abstention_bands": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45],
+  "bootstrap_samples": 500,
+  "config_copy_path": "reports/experiments/milestone8/config.json",
+  "features_dir": "data/processed/fakeddit/features_milestone8",
+  "image": {
+    "batch_size": 32,
+    "epochs": 3,
+    "image_size": [64, 64],
+    "learning_rate": 0.0005
+  },
+  "image_manifest": "data/processed/fakeddit/image_manifest.parquet",
+  "notebook_path": "notebooks/08_robustness_calibration.ipynb",
+  "original_train_manifest": "data/processed/fakeddit/multimodal_training_manifest.parquet",
+  "original_validation_manifest": "data/processed/fakeddit/multimodal_validation_manifest.parquet",
+  "output_dir": "reports/experiments/milestone8",
+  "seed": 42,
+  "shuffle_seeds": [42, 123, 456, 789, 2026],
+  "temperature_grid": {
+    "max": 5.0,
+    "min": 0.25,
+    "steps": 96
+  },
+  "text": {
+    "batch_size": 128,
+    "dropout": 0.1,
+    "embedding_dim": 64,
+    "epochs": 8,
+    "hidden_dim": 64,
+    "learning_rate": 0.001,
+    "max_length": 24,
+    "max_vocabulary_size": 8000,
+    "min_frequency": 2,
+    "scale_sample_size": 10000,
+    "tokenization_mode": "minimal"
+  },
+  "fusion": {
+    "batch_size": 128,
+    "dropout": 0.2,
+    "epochs": 20,
+    "hidden_dim": 64,
+    "learning_rate": 0.001
+  }
+}
